@@ -1,0 +1,83 @@
+h1{
+    font-family: "Times New Roman", Times, serif;
+    position: absolute;
+    left:40%;
+    top:100px;
+}
+body,
+html{
+    background-image:url(sky.jpg);
+    background-position:center ;
+    background-size:cover;
+    width:100%;
+    height:100vh;
+    position:relative;
+    overflow-x: hidden;
+}
+.road{
+    width:500%;
+    height:300px;
+    position:absolute;
+    left: 0;
+    bottom:0;
+    right:0;
+    background-image:url(road.jpg);
+    z-index:1;
+    display:block;
+    animation: road 5s linear infinite;
+    background-repeat: repeat-x;
+}
+@keyframes road 
+ {
+  100%
+  {transform: translateX(-3400px);}
+}
+.carbody{
+width:500px;
+position:absolute;
+left:50%;
+bottom:200px;
+z-index: 5;
+transform:translateX(-50%);
+} 
+.carbody img{
+    width:100%;
+    animation: carbody 1s linear infinite;
+}60
+@keyframes carbody {
+    100%{
+       transform:translateY(-1px);
+    }
+    50%{
+        transform:translateY(1px);
+     }  
+     0%{
+         transform: translateY(-1px)
+     } 
+}
+
+.tyres{
+    width:100%;
+    position:absolute;
+    bottom:300px;
+    left:50%;
+    z-index:2;
+}
+.tyres img{
+width:90px;
+height:90px;
+animation: tyres 1s linear infinite;
+}
+@keyframes tyres{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.frontwheel{
+    left:100px;
+    position:absolute;
+}
+.backwheel{
+    left:-205px;
+    position:absolute;
+}
