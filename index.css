@@ -46,7 +46,7 @@ transform:translateX(-50%);
 }60
 @keyframes carbody {
     100%{
-       transform:translateY(-80px);
+       transform:translateY(-1px);
     }
     50%{
         transform:translateY(1px);
